@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Martin Gomez Casas | Founder of Socrates</title>
+<meta name="description" content="Martin Gomez Casas: founder of Socrates, co-founder of Appetite for Music, and a senior at Colegio Hacienda Los Alcaparros in Colombia.">
+<link rel="canonical" href="https://martingomezcasas.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F2A25'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='21' text-anchor='middle' fill='%23F5F6F0'%3EM%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Martin Gomez Casas">
+<meta property="og:description" content="Founder of Socrates, an AI mentor for every employee.">
+<meta property="og:url" content="https://martingomezcasas.vercel.app/">
+<meta property="og:image" content="https://martingomezcasas.vercel.app/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Martin Gomez Casas","alternateName":"Martin Gomez","url":"https://martingomezcasas.vercel.app/","sameAs":["https://github.com/martingomezcasas06-commits"],"alumniOf":{"@type":"School","name":"Colegio Hacienda Los Alcaparros"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Schibsted+Grotesk:wght@400;500&display=swap">
+<style>
+/* Layout: a simple portfolio. Short intro, Socrates as the one full feature with no hidden content, two project rows, then a plain list of highlights that open on click. */
+:root{
+  --paper:#F5F6F0;
+  --ink:#1F2A25;
+  --muted:#65716A;
+  --rule:#DADED2;
+  --link:#3A4AAE;
+  --river:#3F8A72;
+  --btn:#1F2A25;
+  --btn-ink:#F5F6F0;
+  --serif:"Newsreader","Iowan Old Style",Georgia,serif;
+  --ui:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#151A18;--ink:#E4E7DE;--muted:#9AA59D;--rule:#2C3531;--link:#AEB8F5;--river:#7CC4AB;--btn:#E4E7DE;--btn-ink:#151A18;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#151A18;--ink:#E4E7DE;--muted:#9AA59D;--rule:#2C3531;--link:#AEB8F5;--river:#7CC4AB;--btn:#E4E7DE;--btn-ink:#151A18;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.55;font-optical-sizing:auto}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--paper)}
+h1,h2,h3,p,ol,ul,figure,dl,dd{margin:0;padding:0}
+ol,ul{list-style:none}
+img{display:block;width:100%;height:auto}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
+.g{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.wrap{max-width:980px;margin:0 auto;min-width:0}
+.ui{font-family:var(--ui);font-size:14px;line-height:1.45;color:var(--muted)}
+.shot{border:1px solid var(--rule);border-radius:6px}
+figure{display:grid;gap:8px;min-width:0}
+figcaption{font-family:var(--ui);font-size:13.5px;line-height:1.45;color:var(--muted)}
+h2{font-weight:300;font-size:clamp(34px,4.6vw,44px);line-height:1.1;letter-spacing:-.01em;text-wrap:balance}
+h3{font-weight:400;font-size:21px;line-height:1.3}
+.sec{padding-block:clamp(64px,9vw,96px) 0}
+.sec > .wrap{display:grid;gap:28px}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;font-family:var(--ui);font-size:14.5px}
+.btn{background:var(--btn);color:var(--btn-ink);text-decoration:none;padding:8px 14px;border-radius:5px;font-weight:500}
+
+/* top bar */
+.mast{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper)}
+.mast .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:16px}
+.mast .me{font-size:18px;color:var(--ink);text-decoration:none;white-space:nowrap}
+.mast nav{display:flex;gap:20px;font-family:var(--ui);font-size:14px}
+.mast nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
+.mast nav a:hover{color:var(--ink)}
+
+/* intro */
+.open{padding-block:clamp(48px,8vw,88px) 0}
+.open .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:24px clamp(28px,5vw,56px);align-items:center}
+.open-text{display:grid;gap:16px;min-width:0}
+.hero{border-radius:6px}
+@media (max-width:760px){.open .wrap{grid-template-columns:minmax(0,1fr)}}
+h1{font-weight:300;font-size:clamp(44px,6.4vw,64px);line-height:1.05;letter-spacing:-.015em}
+.stand{font-size:clamp(21px,2.4vw,24px);line-height:1.4;font-weight:300;max-width:30em}
+
+/* socrates */
+.soc-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline}
+.soc-head .lede{grid-column:1/-1;font-size:clamp(21px,2.4vw,24px);line-height:1.4;font-weight:300;max-width:31em;margin-top:6px}
+.soc-head .sub{grid-column:1/-1;max-width:34em;margin-top:6px}
+.soc-head .links{grid-column:1/-1;margin-top:10px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px clamp(24px,4vw,48px)}
+.facts dt{font-family:var(--ui);font-size:13px;color:var(--muted);margin-bottom:2px}
+.facts dd{font-size:18px;line-height:1.35}
+.block{display:grid;gap:12px}
+.block p{max-width:34em}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px clamp(20px,3vw,32px);counter-reset:s}
+.steps li{counter-increment:s;display:grid;gap:3px;align-content:start;font-size:17px;line-height:1.42}
+.steps li::before{content:counter(s);font-family:var(--ui);font-size:13px;color:var(--muted)}
+.steps strong{font-weight:500;font-size:19px}
+.steps span{color:var(--muted)}
+.built{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(20px,3vw,32px);align-items:start}
+.built-side{display:grid;gap:18px;min-width:0}
+.built-side p{font-size:17px;line-height:1.45;color:var(--muted)}
+.built-side strong{font-weight:500;color:var(--ink)}
+
+/* project rows */
+.work{display:grid;gap:clamp(40px,6vw,60px)}
+.proj{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px clamp(24px,4vw,40px);align-items:start}
+.proj .txt{display:grid;gap:8px;min-width:0}
+.proj .top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.proj .top .ui{white-space:nowrap}
+.proj h3{font-size:27px;font-weight:300;line-height:1.15}
+.proj details{grid-column:1/-1}
+details > summary{cursor:pointer}
+.proj summary{font-family:var(--ui);font-size:14.5px;color:var(--link);width:fit-content;list-style:none;padding-block:2px}
+summary::-webkit-details-marker{display:none}
+.proj summary::after{content:" +"}
+.proj details[open] summary::after{content:" \2212"}
+.more{display:grid;gap:20px;padding-top:14px;max-width:660px}
+.more > div{display:grid;gap:8px;min-width:0}
+.more ul,.more ol{display:grid;gap:6px}
+.more strong{font-weight:500}
+.numbered{counter-reset:n}
+.numbered li{counter-increment:n;display:grid;grid-template-columns:24px minmax(0,1fr)}
+.numbered li::before{content:counter(n);color:var(--muted)}
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px}
+.compare h3,.more h4{font-family:var(--ui);font-size:14px;font-weight:400;color:var(--muted);margin:0 0 4px}
+.compare li{font-size:17.5px;line-height:1.42}
+.route{position:relative;padding-left:22px}
+.route::before{content:"";position:absolute;left:4px;top:10px;bottom:10px;width:1.5px;background:var(--river)}
+.route li{position:relative;line-height:1.4}
+.route li::before{content:"";position:absolute;left:-22px;top:.45em;width:9px;height:9px;border-radius:50%;background:var(--river)}
+.route small{font-family:var(--ui);font-size:13px;color:var(--muted);margin-left:6px}
+.videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.videos a{display:grid;gap:6px;font-family:var(--ui);font-size:13.5px;line-height:1.4;text-decoration:none;min-width:0}
+
+/* highlights */
+.hl{display:grid;gap:clamp(28px,4vw,40px)}
+.hl-group{display:grid;gap:4px}
+.hl-group > .ui{padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.row{border-bottom:1px solid var(--rule)}
+.row > summary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) 62px 16px;gap:4px 20px;align-items:baseline;padding-block:11px;list-style:none}
+.row b{font-weight:400}
+.row .res{color:var(--muted);line-height:1.35;font-size:18px}
+.row time{font-family:var(--ui);font-size:13.5px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.row > summary::after{content:"+";grid-column:4;font-family:var(--ui);font-size:15px;color:var(--muted);text-align:right}
+.row[open] > summary::after{content:"\2212"}
+.row > summary:hover b{color:var(--link)}
+.row .more{padding:0 0 18px;gap:10px}
+.row .more img{max-width:420px}
+.row .more .links{margin-top:2px}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,44px);align-items:start}
+.about .side{display:grid;gap:14px;min-width:0}
+.hob{display:grid;gap:5px}
+.hob strong{font-weight:500}
+.pics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.contact{display:grid;gap:8px}
+@media (max-width:620px){.pics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pics img{aspect-ratio:1;object-fit:cover;border-radius:6px}
+.pics img.team{object-position:center 66%}
+.mail-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.mail{word-break:break-word;user-select:all;min-width:0}
+button.copy{font-family:var(--ui);font-size:13px;color:var(--muted);background:none;border:1px solid var(--rule);border-radius:4px;padding:3px 9px;cursor:pointer}
+button.copy:hover{color:var(--ink)}
+footer{padding-block:clamp(56px,8vw,88px) 36px}
+footer .wrap{font-family:var(--ui);font-size:13px;color:var(--muted)}
+
+@media (max-width:760px){
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .built,.proj,.about{grid-template-columns:minmax(0,1fr)}
+  .row > summary{grid-template-columns:minmax(0,1fr) 62px 16px}
+  .row .res{grid-column:1 / span 2;grid-row:2}
+  .row > summary::after{grid-column:3;grid-row:1}
+}
+@media (max-width:520px){
+  .facts,.steps,.compare{grid-template-columns:minmax(0,1fr)}
+  .mast .me{font-size:17px}
+  .mast nav{gap:14px}
+  .row .more img{max-width:100%}
+}
+</style>
+</head>
+<body>
+<header class="mast g">
+  <div class="wrap">
+    <a class="me" href="#top">Martin Gomez</a>
+    <nav aria-label="Sections">
+      <a href="#socrates">Socrates</a>
+      <a href="#work">Work</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="open g">
+  <div class="wrap">
+    <div class="open-text">
+      <h1>Martin Gomez</h1>
+      <p class="stand">Hi, I'm Martin. I'm a senior at Colegio Hacienda Los Alcaparros in Colombia, and I want to create great things.</p>
+      <p class="ui">Founder of Socrates · Student Council President · 2nd in Colombia's AI Olympiad</p>
+    </div>
+    <img class="hero" src="img/hero.jpg" alt="Martin at sunset above a harbor with sailboats, with his arm around another person">
+  </div>
+</section>
+
+<!-- SOCRATES: the feature. Everything is visible. -->
+<article class="sec g" id="socrates" aria-labelledby="soc-h">
+  <div class="wrap">
+    <header class="soc-head">
+      <h2 id="soc-h">Socrates</h2>
+      <span class="ui">April 2026 to now</span>
+      <p class="lede">Socrates is an AI-powered platform designed to democratize access to knowledge and unlock human potential. I believe technology should empower people, not replace them.</p>
+      <p class="sub">It works as an AI mentor for every employee. It finds the right AI tools for each person, from the ones their company allows, and teaches them to use those tools in their real work.</p>
+      <div class="links">
+        <a class="btn" href="https://www.socratesmentor.com" target="_blank" rel="noopener">Visit socratesmentor.com ↗</a>
+        <a href="https://github.com/martingomezcasas06-commits/socrates-desktop" target="_blank" rel="noopener">Desktop app on GitHub ↗</a>
+      </div>
+    </header>
+
+    <figure>
+      <img class="shot" src="img/socrates-home.jpg" alt="Socrates web app: an employee's home with their approved AI tools and a chat with Socrates">
+      <figcaption>The web app, where employees do the interview, see their tools and ask Socrates anything. Managers and admins run approvals here. Shown with sample data.</figcaption>
+    </figure>
+
+    <dl class="facts">
+      <div><dt>My role</dt><dd>Founder</dd></div>
+      <div><dt>Where it is now</dt><dd>Live. The staff at my school are the first pilot.</dd></div>
+      <div><dt>What's next</dt><dd>Bring it to its first paying company.</dd></div>
+    </dl>
+
+    <div class="block">
+      <h3>Everyone says AI will change how you work. Nobody tells you where to start.</h3>
+      <p>There are thousands of AI tools and new ones every week. Most companies haven’t picked any, because they don’t know which ones fit their people, which are safe for their data, or whether anyone would actually use them. So they wait, and the work keeps getting done by hand.</p>
+    </div>
+
+    <div class="block">
+      <h3>How it works</h3>
+      <ol class="steps">
+        <li><strong>Interview</strong><span>About 30 minutes on their real work: what they repeat, what takes too long, what they avoid.</span></li>
+        <li><strong>Tools</strong><span>A small personal set, chosen from the ones the company allows.</span></li>
+        <li><strong>Approval</strong><span>The team's manager reviews, then the company's admin gives final approval.</span></li>
+        <li><strong>Coaching</strong><span>By voice, on the person's own screen, one task at a time, until they can do it alone.</span></li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3>What I built</h3>
+      <div class="built">
+        <figure>
+          <img class="shot" src="img/socrates-desktop.jpg" alt="Socrates desktop app listing coaching sessions for each tool" loading="lazy">
+          <figcaption>Desktop app for Mac and Windows. Each tool is split into short coaching sessions, and the app updates itself when I ship a new version.</figcaption>
+        </figure>
+        <div class="built-side">
+          <figure>
+            <img class="shot" src="img/socrates-coach.jpg" alt="Socrates voice coach floating over another app while sharing the screen" loading="lazy">
+            <figcaption>Voice coach that sees your screen. Socrates tells you what to click and why, and you drive.</figcaption>
+          </figure>
+          <p><strong>Research agents.</strong> AI agents run every morning, look for new and better tools, and keep the catalog current.</p>
+          <p><strong>English and Spanish.</strong> The whole product, including the AI's answers, works in both languages.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- OTHER WORK -->
+<section class="sec g" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <h2 id="work-h">Other work</h2>
+    <div class="work">
+
+      <article class="proj" id="appetite">
+        <img class="shot" src="img/appetite-hero.jpg" alt="Appetite for Music website: Encuentra tu siguiente oportunidad, with an example match" loading="lazy">
+        <div class="txt">
+          <div class="top"><h3>Appetite for Music</h3><span class="ui">2026 to now</span></div>
+          <p class="ui">Co-founder · CESA Next Gen UNCOLI · Clickable prototype</p>
+          <p>A matchmaking app that connects emerging music projects safely with potential clients and collaborators. The industry runs on contacts, and our app opens new paths for every project.</p>
+          <div class="links"><a href="https://claude.ai/artifact/5BRdMYPjb7q3ndcNa2uGp8" target="_blank" rel="noopener">The Appetite site ↗</a></div>
+        </div>
+        <details>
+          <summary>Read more</summary>
+          <div class="more">
+            <div><p>Emerging artists have the music, but not the phone numbers. Shows, productions and collaborations go to people who already know each other.</p></div>
+            <div class="compare">
+              <div>
+                <h3>How it works today</h3>
+                <ul>
+                  <li>Cold messages on social media that nobody answers</li>
+                  <li>Opportunities only if you know someone</li>
+                  <li>Deals made by word, without knowing who you're talking to</li>
+                  <li>Prices that don't fit what you can pay</li>
+                </ul>
+              </div>
+              <div>
+                <h3>With Appetite</h3>
+                <ul>
+                  <li>Matches with people already looking for a project like yours</li>
+                  <li>Every match explains why: genre, city, budget</li>
+                  <li>Verified profiles and written proposals in the app</li>
+                  <li>Clear prices in USD from the first message</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h3>Who it's for</h3>
+              <ul>
+                <li><strong>Emerging artists</strong> upload their music, genre and city, and get offers for shows and collaborations.</li>
+                <li><strong>Producers and engineers</strong> post their services and rates. Projects arrive already knowing what they cost.</li>
+                <li><strong>Venues and events</strong> open dates with the genre, capacity and budget they want, and get only projects that fit.</li>
+                <li><strong>Collaborators</strong> are photographers, videographers, designers and managers who want to grow with new projects.</li>
+                <li><strong>Established artists, venues and studios</strong> find new talent without digging through hundreds of messages: opening acts for a tour date, plus new features, producers and songwriters with verified music.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>From profile to deal</h3>
+              <ol class="numbered">
+                <li><p><strong>Create your profile.</strong> What you do, your genre, your city and your budget or rates. Verify your identity so people take you seriously.</p></li>
+                <li><p><strong>Get matches with reasons.</strong> Appetite shows who fits you and why. Pass or connect.</p></li>
+                <li><p><strong>Close the deal in the app.</strong> Chat, send a proposal with a price in USD, and accept or decline. Everything stays in writing.</p></li>
+              </ol>
+            </div>
+            <div>
+              <h3>How it started</h3>
+              <p>My school chose me to take part in CESA Next Gen UNCOLI, the young founders program of CESA, one of Colombia's top business schools, where students build a startup with CESA's mentors. That's where my team and I started Appetite for Music. We now have a clickable prototype, and we're redesigning it. <a href="https://www.cesa.edu.co" target="_blank" rel="noopener">cesa.edu.co ↗</a></p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="proj" id="rio">
+        <img class="shot" src="img/rio-tibitoc.jpg" alt="Students at the Tibitoc treatment plant on the Río Bogotá" loading="lazy">
+        <div class="txt">
+          <div class="top"><h3>Proyecto Río Bogotá</h3><span class="ui">2025–2026</span></div>
+          <p class="ui">School research project · 380 km of river · 158 students since 2015</p>
+          <p>We study the river's full basin, from its source to the Magdalena. We take lab samples, analyze them, and draw conclusions about its past, present and future. More than 12 million people depend on this river.</p>
+          <div class="links">
+            <a href="https://www.eltiempo.com/bogota/estudiantes-colombianos-monitorean-el-rio-bogota-y-revelan-datos-clave-sobre-su-recuperacion-3523485" target="_blank" rel="noopener">El Tiempo ↗</a>
+            <a href="https://www.youtube.com/watch?v=L4iHr38wGkw" target="_blank" rel="noopener">Caracol Radio ↗</a>
+            <a href="https://lanotaeconomica.com.co/movidas-empresarial/estudiantes-colombianos-monitorean-el-rio-bogota-y-revelan-datos-clave-sobre-su-recuperacion/" target="_blank" rel="noopener">La Nota Económica ↗</a>
+          </div>
+        </div>
+        <details>
+          <summary>Read more</summary>
+          <div class="more">
+            <div><p>The project has been running for many years, and I took part in 2025–2026. Our findings have been presented at symposiums and science fairs, and the school now has a database that tracks the river over ten years.</p></div>
+            <div>
+              <h3>Where we take samples</h3>
+              <ol class="route">
+                <li>Laguna de Guacheneque<small>the source</small></li>
+                <li>Villapinzón<small>tanneries</small></li>
+                <li>La Conejera<small>Bogotá wetland</small></li>
+                <li>Córdoba<small>Bogotá wetland</small></li>
+                <li>Santa María del Lago<small>Bogotá wetland</small></li>
+                <li>Río Magdalena<small>where it ends</small></li>
+              </ol>
+            </div>
+            <div>
+              <h3>What we do</h3>
+              <ul>
+                <li><strong>Measure.</strong> Physical and chemical tests of the water and the air at each point along the river.</li>
+                <li><strong>Visit the hard places.</strong> Wetlands and pollution hotspots, like the tanneries in Villapinzón.</li>
+                <li><strong>Interview.</strong> We talk with the people who live by the river and the businesses that use it.</li>
+                <li><strong>Compare.</strong> We compare our results with El Niño and La Niña, and with the data from earlier years.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Watch</h3>
+              <div class="videos">
+                <a href="https://www.youtube.com/watch?v=oFcasW_Zgu4" target="_blank" rel="noopener"><img class="shot" src="img/rio-tibitoc.jpg" alt="Students at the Tibitoc treatment plant" loading="lazy">Visit to the Tibitoc treatment plant ↗</a>
+                <a href="https://www.youtube.com/watch?v=05xqdHQF-n8" target="_blank" rel="noopener"><img class="shot" src="img/rio-caracol.jpg" alt="Project leader Hugo Cely on Planeta Caracol" loading="lazy">A trip through the basin, on Planeta Caracol ↗</a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="sec g" id="highlights" aria-labelledby="hl-h">
+  <div class="wrap">
+    <h2 id="hl-h">Highlights</h2>
+    <div class="hl">
+
+      <div class="hl-group" id="competitions">
+        <p class="ui">Awards</p>
+        <details class="row">
+          <summary><b>Colombian AI Olympiad</b><span class="res">2nd place overall</span><time>2025–26</time></summary>
+          <div class="more">
+            <img class="shot" src="img/olympiad.jpg" alt="Martin holding his Colombian AI Olympiad medal and diploma" loading="lazy">
+            <p>Colombia's national AI olympiad for students in grades 8 to 11, run by Olimpiadas Colombianas and Universidad Antonio Nariño. Three rounds, a qualifying test, a selective test and a national final, covering logic, machine learning, neural networks, computer vision and Python. It's the path to Colombia's team for the International Olympiad in Artificial Intelligence.</p>
+            <p class="links"><a href="https://oc.uan.edu.co/component/k2/itemlist/category/118-olimpiada-colombiana-de-inteligencia-artificial" target="_blank" rel="noopener">Olimpiada Colombiana de Inteligencia Artificial ↗</a></p>
+          </div>
+        </details>
+        <details class="row">
+          <summary><b>Colombian Math Olympiad</b><span class="res">National finalist</span><time>2024–25</time></summary>
+          <div class="more">
+            <p>Colombia's national math olympiad, run by Universidad Antonio Nariño for more than 40 years. Students pass qualifying rounds, and the best reach the national final. It's how Colombia picks its team for the International Mathematical Olympiad.</p>
+            <p class="links"><a href="https://oc.uan.edu.co/" target="_blank" rel="noopener">Olimpiadas Colombianas ↗</a></p>
+          </div>
+        </details>
+        <details class="row">
+          <summary><b>Espíritu Alcaparros Award</b><span class="res">The school's highest award, 2 years in a row</span><time>2024–26</time></summary>
+          <div class="more"><p>The highest award the school gives. It recognizes key members of the school's community, for reflecting the school's values and for academic performance. I received it in 2024–2025 and 2025–2026.</p></div>
+        </details>
+      </div>
+
+      <div class="hl-group" id="leadership">
+        <p class="ui">Leadership</p>
+        <details class="row">
+          <summary><b>Student Council</b><span class="res">President, after a year as Vice-President</span><time>2026–27</time></summary>
+          <div class="more"><p>The student council represents all the students of Colegio Hacienda Los Alcaparros to the school's leadership. The president leads it. I was Vice-President in 2025–26.</p></div>
+        </details>
+        <details class="row">
+          <summary><b>GRULAC Jr.</b><span class="res">Delegate in Argentina, Committee President in Colombia</span><time>2025</time></summary>
+          <div class="more">
+            <img class="shot" src="img/grulac.jpg" alt="At the GRULAC Jr. committee table in Colombia" loading="lazy">
+            <p>A network of young people from Latin America and the Caribbean who work on sustainability, run like a UN conference. Students form commissions on topics like biodiversity, water, climate change and social equity. Each commission writes a manifesto, and together they agree on a final declaration. The 13th edition, in November 2025, brought more than 100 young delegates to Bogotá.</p>
+            <p>I was invited with my school to GRULAC Jr. Argentina in Rosario, four days of UN-style debate on environmental problems and their solutions. In 2025 Alcaparros hosted GRULAC Jr. in Colombia, where I was the president of my committee. I ran the debate and led the delegates to their manifesto.</p>
+            <p class="links"><a href="https://grulacjunior.org/" target="_blank" rel="noopener">grulacjunior.org ↗</a><a href="https://www.escuelaraularino.edu.ar/novedades/41" target="_blank" rel="noopener">Rosario ↗</a><a href="https://www.minambiente.gov.co/documento-entidad/grupo-regional-de-jovenes-de-latinoamerica-y-el-caribe-grulac-junior/" target="_blank" rel="noopener">Minambiente ↗</a><a href="https://alcaparros.edu.co/noticia/grulac-jr-xiii-jovenes-lideres-por-la-sostenibilidad/" target="_blank" rel="noopener">Alcaparros ↗</a></p>
+          </div>
+        </details>
+        <details class="row">
+          <summary><b>School House Captain</b><span class="res">Elected by my house. That year we won.</span><time>2023–24</time></summary>
+          <div class="more"><img class="shot" src="img/house.jpg" alt="My house team in red celebrating" loading="lazy"></div>
+        </details>
+      </div>
+
+      <div class="hl-group" id="service">
+        <p class="ui">Service</p>
+        <details class="row" id="kite">
+          <summary><b>Kite Heroes</b><span class="res">Co-led 31 EPM volunteers on Isla Grande</span></summary>
+          <div class="more">
+            <p>I co-led a three-day social service trip to Isla Grande, in the Islas del Rosario off Cartagena, with Kite Heroes, a program of Fundación Diverplaza. Our 31 volunteers from <a href="https://www.epm.com.co/" target="_blank" rel="noopener">EPM</a> cleaned up the island and spent time with the children the foundation helps. We also painted a park for the children of the community and put up publicity for the foundation in nearby hotels.</p>
+            <p>The foundation works with children who have fewer opportunities: children of recycling families in Bogotá, and children from the communities of the Islas del Rosario. <a href="https://fundaciondiverplaza.org/proyectos/" target="_blank" rel="noopener">Its projects ↗</a></p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec g" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <h2 id="about-h">About</h2>
+    <div class="about">
+      <p>I was born in New York and grew up in Colombia. I like working in teams, and I'm in a good mood most of the time. I'm happiest with my friends and family, traveling, or out on the water.</p>
+      <div class="side">
+        <ul class="hob">
+          <li><strong>Football.</strong> I love football.</li>
+          <li><strong>Golf.</strong> I started last year, and I like it a lot.</li>
+          <li><strong>Basketball.</strong> I'm on my school's team. I play OK.</li>
+          <li><strong>Music.</strong> I like playing many instruments. The ones I'm best at are piano and guitar.</li>
+          <li><strong>Kitesurf.</strong> I love kitesurfing. It's a great experience.</li>
+        </ul>
+        <p>These have given me discipline, consistency, effort, teamwork, communication, and the ability to collaborate with people who are different from me.</p>
+      </div>
+    </div>
+    <div class="pics">
+      <img src="img/kitesurf.jpg" alt="On the beach after kitesurfing, with kites in the sky behind us" loading="lazy">
+      <img src="img/band.jpg" alt="Playing guitar with the school band" loading="lazy">
+      <img class="team" src="img/basketball.jpg" alt="My school basketball team on the bleachers" loading="lazy">
+      <img src="img/barca.jpg" alt="As a kid in a Barcelona shirt on a football pitch, with a friend" loading="lazy">
+      <img src="img/millonarios.jpg" alt="With friends and Millonarios flags outside Movistar Arena" loading="lazy">
+      <img src="img/colombia.jpg" alt="With a friend, both in Colombia national team shirts" loading="lazy">
+    </div>
+    <div id="contact" class="contact">
+      <div class="mail-row">
+        <span class="mail" id="mail">martin.gomezcasas06@gmail.com</span>
+        <button class="copy" id="copy" type="button">Copy</button>
+      </div>
+      <div class="links"><a href="https://github.com/martingomezcasas06-commits" target="_blank" rel="noopener">GitHub ↗</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="g"><div class="wrap">Martin Gomez Casas · Colegio Hacienda Los Alcaparros · Colombia</div></footer>
+
+<script>
+(function(){
+  var b=document.getElementById('copy'),m=document.getElementById('mail');
+  function selectIt(){var r=document.createRange();r.selectNodeContents(m);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  b.addEventListener('click',function(){
+    var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1800)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(m.textContent).then(done,selectIt)}else{selectIt()}
+  });
+  function openTarget(){
+    var el=location.hash?document.getElementById(location.hash.slice(1)):null;
+    if(el&&el.tagName==='DETAILS'){el.open=true;el.scrollIntoView()}
+  }
+  window.addEventListener('hashchange',openTarget);openTarget();
+})();
+</script>
+
+</body>
+</html>
