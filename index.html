@@ -76,7 +76,28 @@ h3{font-weight:400;font-size:21px;line-height:1.3}
 h1{font-weight:300;font-size:clamp(44px,6.4vw,64px);line-height:1.05;letter-spacing:-.015em}
 .stand{font-size:clamp(21px,2.4vw,24px);line-height:1.4;font-weight:300;max-width:30em}
 
-/* socrates */
+/* socrates: a front-page feature plus its own page, shown at #socrates */
+#socrates{display:none}
+body.on-soc #socrates{display:block}
+body.on-soc main > :not(#socrates){display:none}
+#socrates h2{font-size:clamp(44px,6.4vw,64px)}
+#socrates > .wrap{gap:clamp(36px,5vw,52px)}
+#socrates .block > h3{font-size:clamp(25px,2.8vw,29px);font-weight:300;line-height:1.2}
+#socrates .block{gap:14px}
+.backlink{grid-column:1/-1;font-family:var(--ui);font-size:14.5px;text-decoration:none;margin-bottom:14px;width:fit-content}
+.feature{display:grid;gap:18px}
+.feature .lede{font-size:clamp(23px,2.8vw,28px);line-height:1.35;font-weight:300;max-width:30em}
+.feature-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.feature a.pic{display:block;color:inherit}
+.feature a.pic img{transition:opacity .15s}
+.feature a.pic:hover img{opacity:.92}
+.tri{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px clamp(20px,3vw,32px)}
+.tri h4{font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.3;margin:0 0 3px}
+.tri p{font-size:17px;line-height:1.42;color:var(--muted)}
+.stack{display:grid;gap:8px;max-width:34em}
+.stack li{font-size:18px;line-height:1.4}
+.stack strong{font-weight:500}
+@media (max-width:640px){.tri{grid-template-columns:minmax(0,1fr)}}
 .soc-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline}
 .soc-head .lede{grid-column:1/-1;font-size:clamp(21px,2.4vw,24px);line-height:1.4;font-weight:300;max-width:31em;margin-top:6px}
 .soc-head .sub{grid-column:1/-1;max-width:34em;margin-top:6px}
@@ -204,10 +225,28 @@ footer .wrap{font-family:var(--ui);font-size:13px;color:var(--muted)}
   </div>
 </section>
 
-<!-- SOCRATES: the feature. Everything is visible. -->
+<!-- SOCRATES on the front page -->
+<section class="sec g" id="socrates-home" aria-labelledby="sochome-h">
+  <div class="wrap feature">
+    <div class="feature-top">
+      <h2 id="sochome-h">Socrates</h2>
+      <span class="ui">April 2026 to now</span>
+    </div>
+    <p class="lede">Socrates is an AI-powered platform designed to democratize access to knowledge and unlock human potential. I believe technology should empower people, not replace them.</p>
+    <p class="ui">Founder · Live · First pilot with the staff at my school</p>
+    <div class="links">
+      <a class="btn" href="#socrates">See the full project →</a>
+      <a href="https://www.socratesmentor.com" target="_blank" rel="noopener">Visit socratesmentor.com ↗</a>
+    </div>
+    <a class="pic" href="#socrates" aria-label="See the full Socrates project"><img class="shot" src="img/socrates-home.jpg" alt="Socrates web app: an employee's home with their approved AI tools and a chat with Socrates"></a>
+  </div>
+</section>
+
+<!-- SOCRATES: its own page, shown at #socrates -->
 <article class="sec g" id="socrates" aria-labelledby="soc-h">
   <div class="wrap">
     <header class="soc-head">
+      <a class="backlink" href="#socrates-home">← Back to all work</a>
       <h2 id="soc-h">Socrates</h2>
       <span class="ui">April 2026 to now</span>
       <p class="lede">Socrates is an AI-powered platform designed to democratize access to knowledge and unlock human potential. I believe technology should empower people, not replace them.</p>
@@ -250,6 +289,25 @@ footer .wrap{font-family:var(--ui);font-size:13px;color:var(--muted)}
     </div>
 
     <div class="block">
+      <h3>What it does for a team</h3>
+      <div class="tri">
+        <div><h4>Picks the right tool</h4><p>It knows the company's tools and tells each person which one to reach for, and why.</p></div>
+        <div><h4>Answers every question</h4><p>People ask Socrates while they work, and it answers based on their own approved tools.</p></div>
+        <div><h4>Teaches it properly</h4><p>One tool and one real task per session. It shows the task once, then the person does it.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Why it works when training doesn't</h3>
+      <p>Most AI tools assume you already know what to ask. Socrates is built for the people who don't. Every recommendation is matched to the person's real work, so a recruiter and an analyst end up with different tools. For example, an account executive's set could look like this:</p>
+      <ul class="stack">
+        <li><strong>Claude</strong> turns call notes into the follow-up, in their own voice.</li>
+        <li><strong>Notion AI</strong> keeps the account page current without them writing it.</li>
+        <li><strong>Perplexity</strong> gives two minutes of context before they dial.</li>
+      </ul>
+    </div>
+
+    <div class="block">
       <h3>What I built</h3>
       <div class="built">
         <figure>
@@ -265,6 +323,21 @@ footer .wrap{font-family:var(--ui);font-size:13px;color:var(--muted)}
           <p><strong>English and Spanish.</strong> The whole product, including the AI's answers, works in both languages.</p>
         </div>
       </div>
+    </div>
+
+    <div class="block">
+      <h3>Built so companies can trust it</h3>
+      <div class="tri">
+        <div><h4>People decide</h4><p>Socrates only recommends. Every tool is approved by a team manager and then a company admin before anyone gets it.</p></div>
+        <div><h4>Private by default</h4><p>Company data stays with the company, and conversations don't train AI models.</p></div>
+        <div><h4>Careful with your screen</h4><p>It sees your main screen only during an open session. It never clicks or types for you, and it captures nothing outside a session.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Where it's going</h3>
+      <p>Right now the staff at my own school, Colegio Hacienda Los Alcaparros, are using Socrates as the first pilot. Next, I want to bring it to its first paying company. Slack and Teams are on the roadmap.</p>
+      <div class="links"><a href="#socrates-home">← Back to all work</a></div>
     </div>
   </div>
 </article>
@@ -493,11 +566,14 @@ footer .wrap{font-family:var(--ui);font-size:13px;color:var(--muted)}
     var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1800)};
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(m.textContent).then(done,selectIt)}else{selectIt()}
   });
-  function openTarget(){
-    var el=location.hash?document.getElementById(location.hash.slice(1)):null;
-    if(el&&el.tagName==='DETAILS'){el.open=true;el.scrollIntoView()}
+  function route(){
+    var h=location.hash.slice(1),soc=h==='socrates';
+    document.body.classList.toggle('on-soc',soc);
+    if(soc){window.scrollTo({top:0,behavior:'instant'});return}
+    var el=h?document.getElementById(h):null;
+    if(el){if(el.tagName==='DETAILS')el.open=true;el.scrollIntoView({behavior:'instant'})}
   }
-  window.addEventListener('hashchange',openTarget);openTarget();
+  window.addEventListener('hashchange',route);route();
 })();
 </script>
 
