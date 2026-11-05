@@ -79,7 +79,11 @@ h1{font-weight:300;font-size:clamp(44px,6.4vw,64px);line-height:1.05;letter-spac
 /* socrates */
 .soc-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline}
 .soc-head .lede{grid-column:1/-1;font-size:clamp(21px,2.4vw,24px);line-height:1.4;font-weight:300;max-width:31em;margin-top:6px}
+.soc-head .sub{grid-column:1/-1;max-width:34em;margin-top:6px}
 .soc-head .links{grid-column:1/-1;margin-top:10px}
+.demo{grid-column:1/-1;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 16px;margin-top:14px;font-family:var(--ui);font-size:14.5px;line-height:1.5;width:fit-content;max-width:100%}
+.demo dt{color:var(--muted)}
+.cred{user-select:all;word-break:break-word}
 .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px clamp(24px,4vw,48px)}
 .facts dt{font-family:var(--ui);font-size:13px;color:var(--muted);margin-bottom:2px}
 .facts dd{font-size:18px;line-height:1.35}
@@ -206,11 +210,17 @@ footer .wrap{font-family:var(--ui);font-size:13px;color:var(--muted)}
     <header class="soc-head">
       <h2 id="soc-h">Socrates</h2>
       <span class="ui">April 2026 to now</span>
-      <p class="lede">An AI mentor for every employee. It finds the right AI tools for each person, from the ones their company allows, and teaches them to use those tools in their real work.</p>
+      <p class="lede">Socrates is an AI-powered platform designed to democratize access to knowledge and unlock human potential. I believe technology should empower people, not replace them.</p>
+      <p class="sub">It works as an AI mentor for every employee. It finds the right AI tools for each person, from the ones their company allows, and teaches them to use those tools in their real work.</p>
       <div class="links">
         <a class="btn" href="https://www.socratesmentor.com" target="_blank" rel="noopener">Visit socratesmentor.com ↗</a>
         <a href="https://github.com/martingomezcasas06-commits/socrates-desktop" target="_blank" rel="noopener">Desktop app on GitHub ↗</a>
       </div>
+      <dl class="demo">
+        <dt>Try the demo</dt><dd>Sign in at socratesmentor.com with this account.</dd>
+        <dt>Email</dt><dd><span class="cred">demo@socratesmentor.com</span></dd>
+        <dt>Password</dt><dd><span class="cred">SocratesDemo2026</span></dd>
+      </dl>
     </header>
 
     <figure>
@@ -451,6 +461,7 @@ footer .wrap{font-family:var(--ui);font-size:13px;color:var(--muted)}
           <li><strong>Music.</strong> I like playing many instruments. The ones I'm best at are piano and guitar.</li>
           <li><strong>Kitesurf.</strong> I love kitesurfing. It's a great experience.</li>
         </ul>
+        <p>These have given me discipline, consistency, effort, teamwork, communication, and the ability to collaborate with people who are different from me.</p>
       </div>
     </div>
     <div class="pics">
